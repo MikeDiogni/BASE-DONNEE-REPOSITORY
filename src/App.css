@@ -1,38 +1,126 @@
+/* Style général */
 .App {
   text-align: center;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+.all {
+  width: 100%;
+  /* Style général */
+  background: linear-gradient(135deg,#dce7f1, #67cdfc );
   min-height: 100vh;
+  margin: 0;
+  padding: 0;
+
+}
+
+/* Header */
+.App-header {
+   /* Couleur de fond du header */
+  padding: 20px 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Ombre légère */
+  
+}
+
+.navigation-bar {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-left: 5%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  justify-content: flex-start;
+  margin-right:90%;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin-left: 20px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #007bff; /* Couleur au survol */
+}
+
+/* Contenu principal */
+.body {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.body h1 {
+  font-size: 3.5rem;
+  margin-bottom: 20px;
+  color: #333;
+  padding-right: 40%;
+  text-align: left;
+  margin-top:10% ;
+
+}
+
+.body p {
+  font-size: 1.8rem;
+  color: #666;
+  margin-bottom: 30px;
+  padding-right: 30%;
+  font-family: italic;
+}
+
+/* Boutons */
+.button-container {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  gap: 20px;
+}
+
+.button-container button {
+  padding: 12px 24px;
+  background-color: #007bff;
   color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.button-container button:hover {
+  background-color: #0056b3;
+}
+.search-button {
+  display: flex;
+  max-width: 500px;
+  margin: 0 auto;
+}
+.search-input{
+  flex: 1;
+  padding: 10px;
+  font-size: 10pxc;
+  margin: 0 auto;
+}
+.search-button{
+  padding: 10px 15px;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
